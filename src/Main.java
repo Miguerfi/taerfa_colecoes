@@ -10,7 +10,7 @@ public class Main {
     }
 
     public static void AlphabeticSort(){
-        List<String> names = new ArrayList<String>();
+        List<String> names = new ArrayList<>();
         Scanner nomes_input = new Scanner(System.in);
         for(int i = 0; i<3; i++){
             System.out.println("Digite o nome: ");
@@ -20,7 +20,7 @@ public class Main {
         System.out.println("NOMES ORDENADOS EM ORDEM ALFABETICA" + names);
     }
     public static void ClassificacaoPorGenero(){
-        List<Pessoas> pessoas = new ArrayList<Pessoas>();
+        List<Pessoas> pessoas = new ArrayList<>();
         for (int i = 0; i < 3; i++) {
             Scanner nome_input = new Scanner(System.in);
             System.out.println("Digite o nome: ");
@@ -37,8 +37,8 @@ public class Main {
 //                System.out.println("Pessoa do gênero feminino: " + pessoa.getNome());
 //            }
 //        }
-        List<String> pessoas_do_sexo_masculino = new ArrayList<String>();
-        List<String> pessoas_do_sexo_feminino = new ArrayList<String>();
+        List<String> pessoas_do_sexo_masculino = new ArrayList<>();
+        List<String> pessoas_do_sexo_feminino = new ArrayList<>();
         for (Pessoas pessoa:pessoas){
             if (pessoa.getGenero().equals("M")||pessoa.getGenero().equals("Masculino")){
                 pessoas_do_sexo_masculino.add(pessoa.getNome());

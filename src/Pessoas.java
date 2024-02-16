@@ -1,6 +1,6 @@
 public class Pessoas implements Comparable<Pessoas>{
-    private String nome;
-    private String genero;
+    private final String nome;
+    private final String genero;
 
     public Pessoas(String nome, String genero) {
         this.nome = nome;
